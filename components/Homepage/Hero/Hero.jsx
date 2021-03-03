@@ -32,8 +32,7 @@ const useStyles = makeStyles(({ breakpoints, navbar, color }) => ({
     marginRight: '-30px'
   },
   blurb: {
-    color: color.textHeading,
-    opacity: '.6',
+    color: '#BFAC9B',
     fontFamily: 'Branch',
     marginLeft: '2rem',
     fontSize: '50px',

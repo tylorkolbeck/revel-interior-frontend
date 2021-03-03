@@ -5,11 +5,13 @@ import ThreeCard from '../components/UI/ThreeCard/ThreeCard'
 
 // Components
 import HomepageHero from '../components/Homepage/Hero/Hero'
+import SectionHeader from '../components/Typography/SectionHeader/SectionHeader'
 
 const useStyles = makeStyles(({ content }) => ({
   root: {},
   content: {
-    padding: content.padding
+    padding: content.padding,
+    display: 'block'
   }
 }))
 
@@ -23,7 +25,8 @@ export default function Index({ homepageData }) {
       <div className={classes.content}>
         <ThreeCard />
       </div>
-      <div style={{ height: '1000px' }}></div>
+      <SectionHeader>SHOP RECENT FINDS</SectionHeader>
+      {/* <div style={{ height: '1000px' }}></div> */}
     </div>
   )
 }

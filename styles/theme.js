@@ -7,11 +7,16 @@ const theme = createMuiTheme({
     text: '#0D0D0D',
     textHeading: '#8C6751'
   },
+  fonts: {
+    heading: 'Branch'
+  },
   navbar: {
     height: '60px'
   },
   content: {
-    padding: '0px 20px'
+    padding: '0px 30px',
+    marginTop: '150px',
+    marginBottom: '150px'
   }
 })
 
