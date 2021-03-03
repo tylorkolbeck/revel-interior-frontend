@@ -7,5 +7,5 @@ const useStyles = makeStyles((theme) => ({
 
 export default function COMPONENTTEMPLATE() {
   const classes = useStyles()
-  return <div></div>
+  return <div className={classes.root}></div>
 }

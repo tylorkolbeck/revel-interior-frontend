@@ -3,17 +3,15 @@ import { makeStyles } from '@material-ui/styles'
 import { Grid, Hidden, Typography } from '@material-ui/core'
 
 // components
-import Image from '../Image/Image'
+import Image from '../../Image/Image'
 
 const useStyles = makeStyles(({ breakpoints, navbar, color }) => ({
   root: {
     height: '100vh',
     [breakpoints.down('sm')]: {
       height: '70vh'
-      // marginTop: navbar.height
     }
   },
-
   leftContainer: {
     flexDirection: 'column',
     height: '100%'
@@ -31,8 +29,7 @@ const useStyles = makeStyles(({ breakpoints, navbar, color }) => ({
   },
 
   logoText: {
-    marginRight: '-30px',
-    zIndex: '1'
+    marginRight: '-30px'
   },
   blurb: {
     color: color.textHeading,
