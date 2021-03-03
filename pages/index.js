@@ -6,8 +6,11 @@ import ThreeCard from '../components/UI/ThreeCard/ThreeCard'
 // Components
 import HomepageHero from '../components/Homepage/Hero/Hero'
 
-const useStyles = makeStyles((theme) => ({
-  root: {}
+const useStyles = makeStyles(({ content }) => ({
+  root: {},
+  content: {
+    padding: content.padding
+  }
 }))
 
 export default function Index({ homepageData }) {
@@ -17,7 +20,9 @@ export default function Index({ homepageData }) {
   return (
     <div className={classes.root}>
       <HomepageHero data={pageHeader} />
-      <ThreeCard />
+      <div className={classes.content}>
+        <ThreeCard />
+      </div>
       <div style={{ height: '1000px' }}></div>
     </div>
   )

@@ -13,7 +13,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     paddingLeft: '10vw',
     marginRight: '-5vw',
     paddingBottom: '40px',
-    [breakpoints.down('sm')]: {
+    [breakpoints.down('xs')]: {
       margin: '0 auto'
     }
   },
@@ -24,7 +24,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'bottom center',
     backgroundRepeat: 'no-repeat',
-    [breakpoints.down('sm')]: {
+    [breakpoints.down('xs')]: {
       width: '90vw',
       height: '90vw',
       margin: '0 auto'
@@ -33,7 +33,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
   rightImageWrapper: {
     height: '100%',
     paddingTop: '50px',
-    [breakpoints.down('sm')]: {
+    [breakpoints.down('xs')]: {
       height: 'auto',
       marginTop: '100px'
     }
@@ -44,7 +44,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'bottom center',
     backgroundRepeat: 'no-repeat',
-    [breakpoints.down('sm')]: {
+    [breakpoints.down('xs')]: {
       width: '90vw',
       height: '90vw',
       margin: '0 auto'
@@ -58,7 +58,7 @@ const useStyles = makeStyles(({ breakpoints }) => ({
     paddingTop: '30px',
     width: '80%',
     marginLeft: 'auto',
-    [breakpoints.down('sm')]: {
+    [breakpoints.down('xs')]: {
       width: '100%'
     }
   }
@@ -69,7 +69,7 @@ export default function ThreeCard() {
   return (
     <Grid container className={classes.root} style={{ marginTop: '150px' }}>
       <Grid container justify='center' style={{ height: '60vh' }}>
-        <Grid item sm={6}>
+        <Grid item xs={12} sm={6}>
           <Grid container direction='column' style={{ height: '100%' }}>
             <Grid item className={classes.quoteWrapper}>
               <Quote>
@@ -89,7 +89,7 @@ export default function ThreeCard() {
           </Grid>
         </Grid>
 
-        <Grid item sm={6}>
+        <Grid item xs={12} sm={6}>
           <Grid container className={classes.rightImageWrapper}>
             <Grid item className={classes.rightImage}></Grid>
           </Grid>

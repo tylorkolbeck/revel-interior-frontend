@@ -9,6 +9,9 @@ const theme = createMuiTheme({
   },
   navbar: {
     height: '60px'
+  },
+  content: {
+    padding: '0px 20px'
   }
 })
 
