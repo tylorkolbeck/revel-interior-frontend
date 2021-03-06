@@ -8,7 +8,11 @@ const useStyles = makeStyles(({ color, breakpoints }) => ({
     borderColor: color.text,
     color: color.text,
     fontFamily: 'Branch',
-    fontSize: '24px'
+    fontSize: '24px',
+    '&:hover': {
+      background: color.backgroundSecondary,
+      borderColor: color.backgroundSecondary
+    }
   }
 }))
 

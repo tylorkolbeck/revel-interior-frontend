@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 
-const useStyles = makeStyles(({ color, fonts, content }) => ({
+const useStyles = makeStyles(({ color, fonts, breakpoints }) => ({
   root: {
     fontFamily: fonts.heading,
     fontSize: '8vh',
