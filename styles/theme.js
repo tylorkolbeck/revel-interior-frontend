@@ -16,7 +16,8 @@ const theme = createMuiTheme({
   content: {
     padding: '0px 30px',
     marginTop: '150px',
-    marginBottom: '150px'
+    marginBottom: '150px',
+    maxWidth: '1200px'
   }
 })
 

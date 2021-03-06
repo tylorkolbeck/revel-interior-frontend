@@ -12,8 +12,7 @@ const backgroundSettings = {
 
 const useStyles = makeStyles(({ breakpoints, content }) => ({
   root: {
-    maxWidth: '1200px',
-    marginTop: content.marginTop,
+    maxWidth: content.maxWidth,
     marginLeft: 'auto',
     marginRight: 'auto'
   },

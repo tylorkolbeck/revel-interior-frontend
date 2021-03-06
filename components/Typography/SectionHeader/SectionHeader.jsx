@@ -6,9 +6,7 @@ const useStyles = makeStyles(({ color, fonts, content }) => ({
     fontFamily: fonts.heading,
     fontSize: '8vh',
     lineHeight: '7vh',
-    color: color.textHeading,
-    padding: content.padding,
-    marginTop: content.marginTop
+    color: color.textHeading
   }
 }))
 

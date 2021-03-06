@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@material-ui/styles'
 import { Button } from '@material-ui/core'
 
-const useStyles = makeStyles(({ color }) => ({
+const useStyles = makeStyles(({ color, breakpoints }) => ({
   root: {
     borderRadius: '0px',
     borderColor: color.text,
@@ -15,11 +15,7 @@ const useStyles = makeStyles(({ color }) => ({
 export default function CustomButton({ children }) {
   const classes = useStyles()
   return (
-    <Button
-      className={classes.root}
-      variant='outlined'
-      className={classes.root}
-    >
+    <Button className={classes.root} variant='outlined'>
       {children}
     </Button>
   )
